@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    /* --navLinkColor : #2d405f;
+    --navLinkActiveColor : #0d6efd;
+    --navLinkActiveHoverColor : #005ce6; */
+    --color1 : #fe7a51;
+    --color2 : green;
+    --fontFamily : "Krub", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fontFamily);
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    background-color: #f4f7fb;
+}
+
+header{
+    /* background-color: #f4f7fb; */
+    /* border: 2px solid red; */
+    padding: 0.4rem;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem;
+    /* border: 2px solid red; */
+}
+
+
+#leftLogo{
+    display: flex;
+    align-items: center;
+    column-gap: 0.6rem;
+}
+
+#brandImage{
+    width: 7rem;
+}
+
+#leftHeadings *{
+    white-space: nowrap;
+}
+#leftHeadings{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.4rem;
+}
+
+#leftHeading{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fe7a51;
+}
+#leftSubHeading{
+    font-size: 1rem;
+    font-weight: 600;
+    color: green;
+}
+
+
+
+
+#toggleButton{
+    display: none;
+}
+
+
+#navcontent2{
+    display: none;
+}
+#navcontent1{
+    width: 35rem;
+    display: flex;
+    align-items: center;
+}
+#navcontent1 ul{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.nav-li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 0px;
+    margin : 0 0.6rem;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+.nav-li:hover{
+    color: var(--color2);
+}
+
+.nav-link{
+    color: var(--color1);
+}
+
+.nav-link-active{
+    color: var(--color2);
+}
+
+
+
+@media screen and (max-width:1150px)
+{
+
+
+    #navcontent1{
+        display: none;
+    }
+    
+    header{
+        position: fixed;
+        /* border: 2px solid red; */
+        z-index: 10;
+        width: 100%;
+        margin-top: 0;
+        top: 0;
+    }
+    nav{
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #navbrand{
+        width: 100%;
+        position: relative;
+    }
+
+    #navcontent2{
+        margin-top: 10px;
+        display: block;
+        transform-origin: top;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.6s  ease;
+    }
+
+
+
+    #toggleButton{
+        position: absolute;
+        right: 5%;
+        height: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        cursor: pointer;
+    }
+
+    .togglespan{
+        position: absolute;
+        top: 40%;
+        right: 0;
+        width: 2rem;
+        border-radius: 5px;
+        border: 2px solid var(--color1);
+    }
+    .togglespan:first-child{
+        top: 10%;
+    }
+    .togglespan:last-child{
+        top: 70%;
+    }
+
+
+    #sliderDiv{
+        margin-top: 10rem !important;
+    }
+
+}
+
+
+@media screen and (max-width:600px) 
+{
+
+    body{
+        background-color: #fff;
+    }
+    header{
+        padding: 0;
+    }
+    
+    #brandImage{
+        width: 18vw;
+    }
+    
+    #leftHeadings *{
+        white-space: nowrap;
+    }
+    #leftHeadings{
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.4rem;
+    }
+    
+    #leftHeading{
+        font-size: 3.5vw;
+        text-transform: uppercase;
+    }
+    #leftSubHeading{
+        font-size: 3vw;
+    }
+
+    #sliderDiv{
+        margin-top: 28vw !important;
+    }
+    
+    
+}
+@media screen and (max-width:350px) 
+{
+    .togglespan{
+        width: 1.6rem;
+        background-color: var(--color1);
+    }
+    .togglespan:first-child{
+        top: 15%;
+    }
+    .togglespan:last-child{
+        top: 65%;
+    }
+
+    #sliderDiv{
+        margin-top: 30vw !important;
+    }
+
+}

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    /* --navLinkColor : #2d405f;
+    --navLinkActiveColor : #0d6efd;
+    --navLinkActiveHoverColor : #005ce6; */
+    --color1 : #fe7a51;
+    --color2 : green;
+    --fontFamily : "Krub", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fontFamily);
+}
+
+#chiefGuest{
+    /* border: 2px solid red; */
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0px 3px 5px 0px rgb(0, 0, 0 , 0.30);
+}
+
+
+.introCard{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    position: relative;
+    padding: 1rem;
+    width: 28%;
+    
+}
+
+.personImage{
+    width: 100%;
+    border: 1px solid gray;
+}
+
+.personTag{
+    font-size: 1.3vw;
+    text-align: center;
+    font-weight: 700;
+    color: var(--color1);
+}
+
+
+
+@media screen and (max-width : 700px){
+
+    .introCard{
+        width: 35%;
+    }
+
+    #chiefGuest{
+        width: 100%;
+    }
+    
+    .personTag{
+        font-size: 1.8vw;
+    }
+
+    
+}
+
+
+
+@media screen and (max-width : 400px){
+
+    .personTag{
+        font-size: 2vw;
+    }
+
+
+    
+}
+
+/* 
+<section id="chiefGuest">
+
+<div class="introCard">
+    <img src="./images/modiji.jpg" class="personImage"></img>
+    <div class="personTag">Shri Narendra Modi <br>
+        Hon'ble Prime Minister</div>
+</div>
+<div class="introCard">
+    <img src="./images/rajnathji.jpeg" class="personImage"></img>
+    <div class="personTag">Shri Rajnath Singh <br>
+        Hon'ble Raksha Mantri</div>
+</div>
+<div class="introCard">
+    <img src="./images/ajayji.jpg" class="personImage"></img>
+    <div class="personTag">Shri Ajay Bhatt <br>
+        Hon'ble Raksha Rajya Mantri</div>
+</div>
+
+</section> */

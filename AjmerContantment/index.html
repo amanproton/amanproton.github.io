@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/forms.css">
+    <link rel="stylesheet" href="./css/guest.css">
+    <link rel="stylesheet" href="./css/thirdSection.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+
+    <header>
+
+        <nav>
+
+            <div id="leftLogo">
+                <img src="./images/ajmer_logo.png" alt="" id="brandImage">
+                <div id="leftHeadings">
+                    <div id="leftHeading">Ajmer Cantonment Board</div>
+                    <div id="leftSubHeading">Ministry Of Defence</div>
+                </div>
+                <div id="toggleButton">
+                    <span id="btn1" class="togglespan"></span>
+                    <span id="btn2" class="togglespan"></span>
+                    <span id="btn3" class="togglespan"></span>
+                </div>
+            </div>
+            
+
+
+
+            <div id="navcontent1">
+
+                <ul>
+                    <li class="nav-li nav-link-active">Home</li>
+                    <li class="nav-li nav-link">
+                        <p class="nav-li nav-link" onclick="showModalForm()">Death Certificate</p>
+                        <p class="nav-li nav-link">Birth Certificate</p>
+                        <p class="nav-li nav-link">Marriage Certificate</p>
+                        <p class="nav-li nav-link">Land Registeration</p>
+                    </li>
+                </ul>
+
+            </div>
+            <div id="navcontent2">
+
+                <ul>
+                    <li class="nav-li nav-link-active">Home</li>
+                    <li class="nav-li nav-link" onclick="showModalForm()" >Death Certificate</li>
+                    <li class="nav-li nav-link">Birth Certificate</li>
+                    <li class="nav-li nav-link">Marriage Certificate</li>
+                    <li class="nav-li nav-link">Land Registeration</li>
+                </ul>
+
+            </div>
+
+        </nav>
+
+
+    </header>
+
+
+
+    <section id="sliderDiv">
+
+        <div id="leftbutton" class="slidebuttons">
+            <img src="./png/chevron-left-regular-24.png" alt="">
+        </div>
+
+        <div id="slider">
+            <img id="imgtag" src="./images/a.jpg" alt="">
+        </div>
+
+        <div id="rightbutton" class="slidebuttons">
+            <img src="./png/chevron-right-regular-24.png" alt="">
+        </div>
+
+    </section>
+
+
+    <section id="documentForm">
+
+        <form action="" method="post" class="forms">
+            <div class="formHeading">
+                Death Certificate Form
+            </div>
+            
+            <input style="margin-top: 1.6rem;" required type="text" placeholder="*Full Name">
+            <input required type="text" placeholder="*Date of Birth">
+            <input required type="text" placeholder="*Aadhar Card Number">
+            <input required type="text" placeholder="*Full Address">
+            <input required type="text" placeholder="*Pin">
+            <button id="submitButton" onclick="return false;">Submit</button>
+
+        </form>
+
+    </section>
+
+
+
+
+    <section id="chiefGuest">
+
+        <div class="introCard">
+            <img src="./images/modiji.jpg" class="personImage"></img>
+            <div class="personTag">Shri Narendra Modi <br>
+                Hon'ble Prime Minister</div>
+        </div>
+        <div class="introCard">
+            <img src="./images/rajnathji.jpeg" class="personImage"></img>
+            <div class="personTag">Shri Rajnath Singh <br>
+                Hon'ble Raksha Mantri</div>
+        </div>
+        <div class="introCard">
+            <img src="./images/ajayji.jpg" class="personImage"></img>
+            <div class="personTag">Shri Ajay Bhatt <br>
+                Hon'ble Raksha Rajya Mantri</div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <section id="thirdSection">
+
+        
+        <div id="currentAffairs">
+            
+            <div class="boxHeadings">Current Affairs</div>
+            
+            <div class="newsPoint">
+                <div class="newsHeading"> <a href="https://economictimes.indiatimes.com/news/india/daily-rise-of-over-2-6-lakh-covid-19-cases-is-indias-highest-in-239-days/articleshow/88890443.cms" target="_blank">Rise in Covid</a></div>
+                <div class="newsSubline">50k new cases are found of new varient !</div>
+            </div>
+            <div class="newsPoint">
+                <div class="newsHeading">Captain Change</div>
+                <div class="newsSubline">50k new cases are found of new varient !</div>
+            </div>
+            <div class="newsPoint">
+                <div class="newsHeading">Online Payment Fraud</div>
+                <div class="newsSubline">50k new cases are found of new varient !</div>
+            </div>
+            <div class="newsPoint">
+                <div class="newsHeading">Election in Bihar</div>
+                <div class="newsSubline">50k new cases are found of new varient !</div>
+            </div>
+            <div class="newsPoint">
+                <div class="newsHeading">Technology Updates</div>
+                <div class="newsSubline">50k new cases are found of new varient !</div>
+            </div>
+
+        </div>
+
+
+
+
+        <div id="ongoingServices">
+
+            <div class="boxHeadings">Public Services</div>
+            
+            <div class="service"><i class='bx bx-chevrons-right'></i> &nbsp;&nbsp;<a href="https://services.india.gov.in/service/detail/pay-water-bill-online" target="_blank">Utility Bill Payment</a></div>
+            <div class="service"><i class='bx bx-chevrons-right'></i> &nbsp;&nbsp;Certificates and Licenses</div>
+            <div class="service"><i class='bx bx-chevrons-right'></i> &nbsp;&nbsp;Goverment Levies</div>
+            <div class="service"><i class='bx bx-chevrons-right'></i> &nbsp;&nbsp;Application Submission</div>
+            <div class="service"><i class='bx bx-chevrons-right'></i> &nbsp;&nbsp;Scholarships</div>
+            <div class="service"><i class='bx bx-chevrons-right'></i> &nbsp;&nbsp;Sub CDs</div>
+            <div class="service"><i class='bx bx-chevrons-right'></i> &nbsp;&nbsp;Loan and Agreements</div>
+            <div class="service"><i class='bx bx-chevrons-right'></i> &nbsp;&nbsp;Electricity Bills</div>
+            
+        </div>
+        
+        
+        <div id="upcommingSchemes">
+            
+            <div class="boxHeadings">Upcomming Schemes</div>
+
+            <div class="affairPoint"><a href="https://economictimes.indiatimes.com/news/india/daily-rise-of-over-2-6-lakh-covid-19-cases-is-indias-highest-in-239-days/articleshow/88890443.cms" target="_blank">Covid-19 Funding</a></div>
+            <div class="affairPoint">Free Education</div>
+            <div class="affairPoint">Swachh Bharat</div>
+            <div class="affairPoint">Rental Properties</div>
+            <div class="affairPoint">Aadhar Benefits</div>
+            <div class="affairPoint">Zero Balance Bank Accounts</div>
+            <div class="affairPoint">Cheap Internet</div>
+            <div class="affairPoint">Scholarships</div>
+
+        </div>
+        
+    </section>
+
+
+
+    <div style="height: 100px;"></div>
+</body>
+
+</html>
+
+
+<script src="./js/main.js"></script>
+<script src="./js/jquery.js"></script>
+
+
+<script>
+    const windowheight = $(window).height()
+    const windowwidth = $(window).width()
+    $("#documentForm").height(windowheight)
+
+    $(document).click(function (e) {
+        if (e.target.id == "documentForm") { $("#documentForm").css("display", "none") }
+    });
+
+
+
+
+</script>

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    --color1 : #fe7a51;
+    --color2 : green;
+    --fontFamily : "Krub", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fontFamily);
+}
+
+
+#sliderDiv{
+    position: relative;
+
+    margin: 1rem 1rem;
+    padding: 0.6rem;
+    /* border: 2px solid red; */
+    background-color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 5px 0px rgb(0, 0, 0 , 0.20);
+}
+
+#slider img{
+    width: 100%;
+    transition: all 500ms linear;
+}
+
+.slidebuttons{
+    position: absolute;
+    width:  3.3vw;
+    height: 3.3vw;
+    background-color: rgba(118, 118, 121, 0.23);
+    border-radius: 50%;
+    z-index: 2;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slidebuttons:first-child{
+    left: 1%;
+}
+.slidebuttons:last-child{
+    right: 1%;
+}
