@@ -1,0 +1,58 @@
+*{
+    margin: 0;;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "proxima-nova","Proxima Nova","Open Sans","Arial","Helvetica",sans-serif;
+
+    --defaultBackground : #edf2f9;
+    --mainBackground: #086fba;
+    --navDark : #015480;
+    --myPink : #ef305b;
+    --lightBlue : #9cd6e1;
+    --textPink : #f88eb3;
+    --anotherDivDark : #218796;
+    --boxShadow : 0 .5rem 1rem rgba(0,0,0,.15) ;
+}
+
+*:active , *:focus{
+    outline: none;
+}
+
+
+footer{
+    /* border: 2px solid red; */
+    /* margin: 1rem; */
+    /* padding: 1rem; */
+    background-color: var(--navDark);
+
+    display: flex;
+    justify-content: space-around;
+}
+
+#contact{
+    /* border: 2px solid red; */
+    line-height: 1.6rem;
+    width: max-content;
+    padding: 0.5rem;
+    color: #fff;
+}
+
+#contact a{
+    color: #fff;
+}
+
+#social{
+    /* border: 2px solid red; */
+    line-height: 1.6rem;
+    width: max-content;
+    padding: 0.5rem;
+    color: #fff;
+
+    display: flex;
+    column-gap: 0.5rem;
+    align-items: end;
+    font-size: 1.9rem;
+}
+#social i{
+    cursor: pointer;
+}

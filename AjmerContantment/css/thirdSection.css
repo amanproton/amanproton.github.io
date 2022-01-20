@@ -128,3 +128,27 @@
     padding: 0.4rem;
     font-size: 1.3rem;
 }
+
+
+
+@media screen and (max-width : 1000px) {
+
+    #thirdSection{
+        grid-template-columns: repeat(2 , 1fr);
+    }
+
+    #currentAffairs , #ongoingServices , #upcommingSchemes{
+        margin: 0.5rem 0;
+        border: 2px solid var(--color1);
+    }
+    
+}
+
+@media screen and (max-width : 800px) {
+
+    #thirdSection{
+        grid-template-columns: repeat(1 , 1fr);
+        width: 100%;
+    }
+    
+}
